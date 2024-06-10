@@ -1,0 +1,148 @@
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat
+$ git init
+Initialized empty Git repository in D:/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat/.git/
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$ git add .
+warning: in the working copy of 'build/classes/cadastroVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'build/classes/listagemVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/cadastroVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/cadastroVIEW.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/listagemVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/listagemVIEW.java', LF will be replaced by CRLF the next time Git touches it
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   build.xml
+        new file:   build/classes/.netbeans_automatic_build
+        new file:   build/classes/.netbeans_update_resources
+        new file:   build/classes/ProdutosDAO.class
+        new file:   build/classes/ProdutosDTO.class
+        new file:   build/classes/cadastroVIEW$1.class
+        new file:   build/classes/cadastroVIEW$2.class
+        new file:   build/classes/cadastroVIEW$3.class
+        new file:   build/classes/cadastroVIEW$4.class
+        new file:   build/classes/cadastroVIEW.class
+        new file:   build/classes/cadastroVIEW.form
+        new file:   build/classes/conectaDAO.class
+        new file:   build/classes/leiloestdsat/LeiloesTDSat.class
+        new file:   build/classes/listagemVIEW$1.class
+        new file:   build/classes/listagemVIEW$2.class
+        new file:   build/classes/listagemVIEW$3.class
+        new file:   build/classes/listagemVIEW$4.class
+        new file:   build/classes/listagemVIEW.class
+        new file:   build/classes/listagemVIEW.form
+        new file:   lib/mysql-connector-java-5.1.47.jar
+        new file:   lib/mysql-connector-java-8.0.21.jar
+        new file:   manifest.mf
+        new file:   nbproject/build-impl.xml
+        new file:   nbproject/genfiles.properties
+        new file:   nbproject/private/config.properties
+        new file:   nbproject/private/private.properties
+        new file:   nbproject/project.properties
+        new file:   nbproject/project.xml
+        new file:   src/ProdutosDAO.java
+        new file:   src/ProdutosDTO.java
+        new file:   src/cadastroVIEW.form
+        new file:   src/cadastroVIEW.java
+        new file:   src/conectaDAO.java
+        new file:   src/listagemVIEW.form
+        new file:   src/listagemVIEW.java
+
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$ git commit -m "Projete inicial"
+[master (root-commit) 8e0ae9d] Projete inicial
+ 35 files changed, 3223 insertions(+)
+ create mode 100644 build.xml
+ create mode 100644 build/classes/.netbeans_automatic_build
+ create mode 100644 build/classes/.netbeans_update_resources
+ create mode 100644 build/classes/ProdutosDAO.class
+ create mode 100644 build/classes/ProdutosDTO.class
+ create mode 100644 build/classes/cadastroVIEW$1.class
+ create mode 100644 build/classes/cadastroVIEW$2.class
+ create mode 100644 build/classes/cadastroVIEW$3.class
+ create mode 100644 build/classes/cadastroVIEW$4.class
+ create mode 100644 build/classes/cadastroVIEW.class
+ create mode 100644 build/classes/cadastroVIEW.form
+ create mode 100644 build/classes/conectaDAO.class
+ create mode 100644 build/classes/leiloestdsat/LeiloesTDSat.class
+ create mode 100644 build/classes/listagemVIEW$1.class
+ create mode 100644 build/classes/listagemVIEW$2.class
+ create mode 100644 build/classes/listagemVIEW$3.class
+ create mode 100644 build/classes/listagemVIEW$4.class
+ create mode 100644 build/classes/listagemVIEW.class
+ create mode 100644 build/classes/listagemVIEW.form
+ create mode 100644 lib/mysql-connector-java-5.1.47.jar
+ create mode 100644 lib/mysql-connector-java-8.0.21.jar
+ create mode 100644 manifest.mf
+ create mode 100644 nbproject/build-impl.xml
+ create mode 100644 nbproject/genfiles.properties
+ create mode 100644 nbproject/private/config.properties
+ create mode 100644 nbproject/private/private.properties
+ create mode 100644 nbproject/project.properties
+ create mode 100644 nbproject/project.xml
+ create mode 100644 src/ProdutosDAO.java
+ create mode 100644 src/ProdutosDTO.java
+ create mode 100644 src/cadastroVIEW.form
+ create mode 100644 src/cadastroVIEW.java
+ create mode 100644 src/conectaDAO.java
+ create mode 100644 src/listagemVIEW.form
+ create mode 100644 src/listagemVIEW.java
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$ git remote add origin https://github.com/MaouGaukkenI/Atividade-1.git
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$ git branch -m master
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$ git push -u origin master
+Enumerating objects: 40, done.
+Counting objects: 100% (40/40), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (40/40), 3.11 MiB | 257.00 KiB/s, done.
+Total 40 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/MaouGaukkenI/Atividade-1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$ git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.08 KiB | 0 bytes/s, done.
+From https://github.com/MaouGaukkenI/Atividade-1
+ * branch            master     -> FETCH_HEAD
+   8e0ae9d..321dcb1  master     -> origin/master
+Updating 8e0ae9d..321dcb1
+Fast-forward
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 README.md
+
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 1/LeiloesTDSat (master)
+$
