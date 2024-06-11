@@ -155,3 +155,81 @@ remote: Resolving deltas: 100% (11/11), completed with 4 local objects.
 To https://github.com/MaouGaukkenI/Atividade-1.git
    8518436..d799f06  master -> master
 
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git add .
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   build/classes/Code/ProdutosDAO.class
+        modified:   build/classes/Viewn/cadastroVIEW$1.class
+        modified:   build/classes/Viewn/cadastroVIEW$2.class
+        modified:   build/classes/Viewn/cadastroVIEW$3.class
+        modified:   build/classes/Viewn/cadastroVIEW$4.class
+        modified:   build/classes/Viewn/cadastroVIEW.class
+        modified:   gitConsole2.txt
+        modified:   src/Code/ProdutosDAO.java
+        modified:   src/Viewn/cadastroVIEW.java
+
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git commit -m "Botão de cadastro Ok!"
+[master 3a15ba2] Botão de cadastro Ok!
+ 9 files changed, 161 insertions(+), 12 deletions(-)
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git push
+Enumerating objects: 35, done.
+Counting objects: 100% (35/35), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (18/18), 8.76 KiB | 2.92 MiB/s, done.
+Total 18 (delta 10), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (10/10), completed with 10 local objects.
+To https://github.com/MaouGaukkenI/Atividade-1.git
+   d799f06..3a15ba2  master -> master
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git add .
+warning: in the working copy of 'build/classes/Viewn/listagemVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/Viewn/listagemVIEW.form', LF will be replaced by CRLF the next time Git touches it
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   build/classes/Code/ProdutosDAO.class
+        modified:   build/classes/Viewn/listagemVIEW$1.class
+        modified:   build/classes/Viewn/listagemVIEW$2.class
+        modified:   build/classes/Viewn/listagemVIEW$3.class
+        modified:   build/classes/Viewn/listagemVIEW$4.class
+        modified:   build/classes/Viewn/listagemVIEW.class
+        modified:   gitComandos2.txt
+        modified:   src/Code/ProdutosDAO.java
+        modified:   src/Viewn/listagemVIEW.java
+
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git commit -m "Listagem de produtos OK"
+[master 2891142] Listagem de produtos OK
+ 9 files changed, 101 insertions(+), 6 deletions(-)
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git push
+Enumerating objects: 35, done.
+Counting objects: 100% (35/35), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (18/18), 7.10 KiB | 2.37 MiB/s, done.
+Total 18 (delta 12), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (12/12), completed with 12 local objects.
+To https://github.com/MaouGaukkenI/Atividade-1.git
+   3a15ba2..2891142  master -> master
+

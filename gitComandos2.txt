@@ -48,7 +48,7 @@ $ git push
 
 =============================================================================================
 
-Carregar tabela do banco de dados:
+Listagem de produtos do banco de dados:
 
 $ git add .
 //Carrego as novas modificações no arquivo
