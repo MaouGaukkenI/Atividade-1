@@ -16,18 +16,24 @@ import javax.swing.JOptionPane;
  * @author Adm
  */
 public class conectaDAO {
+    Connection conn = null;
+    String url = "jdbc:mysql://localhost/uc11";
+    String user = "root";
+    String senha = "1234";
     
-    public Connection connectDB(){
-        Connection conn = null;
+    public Connection connectDB() {
         
         try {
-        
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/uc11?user=root&password=");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection(url, this.user, this.senha);
+            conn.setAutoCommit(false);
+
+            System.err.println("Conexão bem sucedida, bem vindo usúario: " + user);
             
-        } catch (SQLException erro){
-            JOptionPane.showMessageDialog(null, "Erro ConectaDAO" + erro.getMessage());
+            return conn;
+        } catch (ClassNotFoundException | SQLException ex) {
+            System.err.println("Não foi possivel realizar a conexão, Codigó de erro: " + ex.getMessage());
+            return null;
         }
-        return conn;
     }
-    
 }
