@@ -3,6 +3,8 @@ package Viewn;
 
 import Code.ProdutosDTO;
 import Code.ProdutosDAO;
+import Code.conectaDAO;
+import java.sql.Connection;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 
@@ -17,11 +19,12 @@ import javax.swing.table.DefaultTableModel;
  */
 public class listagemVIEW extends javax.swing.JFrame {
 
-    /**
-     * Creates new form listagemVIEW
-     */
+    conectaDAO log = new conectaDAO();
+    Connection conn;
+    
     public listagemVIEW() {
         initComponents();
+        conn = log.connectDB();
         listarProdutos();
     }
 
@@ -212,7 +215,7 @@ public class listagemVIEW extends javax.swing.JFrame {
             DefaultTableModel model = (DefaultTableModel) listaProdutos.getModel();
             model.setNumRows(0);
             
-            ArrayList<ProdutosDTO> listagem = produtosdao.listarProdutos();
+            ArrayList<ProdutosDTO> listagem = produtosdao.listarProdutos(conn);
             
             for(int i = 0; i < listagem.size(); i++){
                 model.addRow(new Object[]{

@@ -1,0 +1,63 @@
+Arrumando código de conexão ao banco de dados:
+
+$ git add .
+//Carrego as modificações no meu arquivo
+
+$ git status
+//Verifico se todas modificações foram carregadas
+
+$ git commit -m "Banco de dados login v1.0.0"
+//Salvo um commit com as modificações necessárias para integrar meu sistema ao banco de dados
+
+$ git status
+//Verifico se foram salvas com sucesso
+
+$ git push
+//Envio para o GitHub para salvar as modificações a nuvem
+
+=============================================================================================
+Realizando conexão com o banco de dados:
+
+$ git add .
+//Carrego as novas modificações no arquivo
+
+$ git status
+//Verifico se todas foram carregadas corretamente
+
+$ git commit -m "Banco de dados login v1.1.0 - Conexão estabilizada"
+//Crio um novo commit referente a integração bem sucedida ao banco de dados
+
+$ git push
+//Envio as alterações para nuvem
+
+=============================================================================================
+
+Botão para salvar itens no banco de dados:
+
+$ git add .
+//Carrego as novas modificações no arquivo
+
+$ git status
+//Verifico se todas foram carregadas corretamente
+
+$ git commit -m "Banco de dados login v1.1.0 - Conexão estabilizada"
+//Crio um novo commit referente a integração bem sucedida ao banco de dados
+
+$ git push
+//Envio as alterações para nuvem
+
+=============================================================================================
+
+Carregar tabela do banco de dados:
+
+$ git add .
+//Carrego as novas modificações no arquivo
+
+$ git status
+//Verifico se todas foram carregadas corretamente
+
+$ git commit -m "Banco de dados login v1.1.0 - Conexão estabilizada"
+//Crio um novo commit referente a integração bem sucedida ao banco de dados
+
+$ git push
+//Envio as alterações para nuvem
