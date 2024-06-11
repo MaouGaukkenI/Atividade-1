@@ -1,19 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+package Viewn;
 
-/**
- *
- * @author Adm
- */
+
+import Code.ProdutosDTO;
+import Code.ProdutosDAO;
+import Code.conectaDAO;
+
 public class cadastroVIEW extends javax.swing.JFrame {
 
-    /**
-     * Creates new form cadastroVIEW
-     */
+    conectaDAO log = new conectaDAO();
+    
     public cadastroVIEW() {
         initComponents();
+        log.connectDB();
     }
 
     /**

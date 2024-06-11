@@ -1,23 +1,13 @@
+package Code;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
-
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author Adm
- */
 public class conectaDAO {
     Connection conn = null;
-    String url = "jdbc:mysql://localhost/uc11";
+    String url = "jdbc:mysql://localhost/uc11?useTimezone=true&serverTimezone=UTC";
     String user = "root";
     String senha = "1234";
     
@@ -28,11 +18,14 @@ public class conectaDAO {
             conn = DriverManager.getConnection(url, this.user, this.senha);
             conn.setAutoCommit(false);
 
-            System.err.println("Conexão bem sucedida, bem vindo usúario: " + user);
+            System.out.println("Conexão bem sucedida, bem vindo usúario: " + user);
             
             return conn;
-        } catch (ClassNotFoundException | SQLException ex) {
-            System.err.println("Não foi possivel realizar a conexão, Codigó de erro: " + ex.getMessage());
+        }  catch (ClassNotFoundException ex) {
+            JOptionPane.showMessageDialog(null, "Driver JDBC não encontrado: " + ex.getMessage());
+            return null;
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Não foi possível realizar a conexão, Código de erro: " + ex.getMessage());
             return null;
         }
     }

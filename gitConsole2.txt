@@ -1,0 +1,51 @@
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git add .
+warning: in the working copy of 'BD.sql', LF will be replaced by CRLF the next time Git touches it
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   BD.sql
+        modified:   build/classes/conectaDAO.class
+        deleted:    gitComandos.txt
+        new file:   gitComandos2.txt
+        deleted:    gitConsole.txt
+        new file:   gitConsole2.txt
+        modified:   nbproject/project.properties
+        modified:   src/ProdutosDAO.java
+        modified:   src/conectaDAO.java
+
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git commit -m "Banco de dados login v1.0.0"
+[master 8518436] Banco de dados login v1.0.0
+ 9 files changed, 91 insertions(+), 186 deletions(-)
+ create mode 100644 BD.sql
+ delete mode 100644 gitComandos.txt
+ create mode 100644 gitComandos2.txt
+ delete mode 100644 gitConsole.txt
+ create mode 100644 gitConsole2.txt
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 2/LeiloesTDSat (master)
+$ git push
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 3.14 KiB | 3.14 MiB/s, done.
+Total 11 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/MaouGaukkenI/Atividade-1.git
+   ebda041..8518436  master -> master
