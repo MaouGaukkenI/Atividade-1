@@ -4,16 +4,26 @@ package Viewn;
 import Code.ProdutosDTO;
 import Code.ProdutosDAO;
 import Code.conectaDAO;
+import java.sql.Connection;
 
 public class cadastroVIEW extends javax.swing.JFrame {
-
     conectaDAO log = new conectaDAO();
+    Connection conn;
     
     public cadastroVIEW() {
         initComponents();
-        log.connectDB();
+        conn = log.connectDB();
+        setConect(conn);
     }
-
+    
+    public void setConect(Connection conn_){
+        conn = conn_;
+    }
+    
+    public Connection getConect(){
+        return conn;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -142,12 +152,13 @@ public class cadastroVIEW extends javax.swing.JFrame {
         String nome = cadastroNome.getText();
         String valor = cadastroValor.getText();
         String status = "A Venda";
+        
         produto.setNome(nome);
-        produto.setValor(Integer.parseInt(valor));
+        produto.setValor(Integer.valueOf(valor));
         produto.setStatus(status);
         
         ProdutosDAO produtodao = new ProdutosDAO();
-        produtodao.cadastrarProduto(produto);
+        produtodao.cadastrarProduto(produto, getConect());
         
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
