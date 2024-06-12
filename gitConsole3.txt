@@ -1,0 +1,37 @@
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3
+$ git init
+Initialized empty Git repository in D:/Senac/Atividades para entrega/Mod III/Atividade 3/.git/
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3 (master)
+$ git remote add origin https://github.com/MaouGaukkenI/Atividade-1.git
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3 (master)
+$ git pull
+remote: Enumerating objects: 145, done.
+remote: Counting objects: 100% (145/145), done.
+remote: Compressing objects: 100% (85/85), done.
+remote: Total 145 (delta 71), reused 124 (delta 52), pack-reused 0
+Receiving objects: 100% (145/145), 9.70 MiB | 415.00 KiB/s, done.
+Resolving deltas: 100% (71/71), done.
+From https://github.com/MaouGaukkenI/Atividade-1
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3 (Melhorias)
+$ git branch -m melhorias
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3 (melhorias)
+$ git pull origin melhorias
+From https://github.com/MaouGaukkenI/Atividade-1
+ * branch            melhorias  -> FETCH_HEAD
+ * [new branch]      melhorias  -> origin/melhorias
+Updating files: 100% (44/44), done.
