@@ -45,14 +45,29 @@ public class ProdutosDAO{
             }
         } catch (SQLException ex) {
             System.err.println("\nNão foi possível adicionar os dados. Código de erro: " + ex.getMessage());
-        } finally {
-            if (ps != null) {
-                try {
-                    ps.close();
-                } catch (SQLException e) {
-                    System.err.println("Erro: " + e.getMessage());
-                }
+        }
+    }
+    
+    public void venderProduto(int id, Connection conect){
+        ps = null;
+        rs = null;
+        conn = conect;
+        try {
+            comand = "UPDATE produtos SET status = 'vendido' WHERE id = ?";
+            ps = conn.prepareStatement(comand, java.sql.Statement.RETURN_GENERATED_KEYS);
+
+            ps.setInt(1, id);
+
+            int rowsAffected = ps.executeUpdate();
+
+            if (rowsAffected > 0) {
+                System.out.println("\nProduto vendido com sucesso");
+                conn.commit();
+            } else {
+                System.err.println("\nNão foi possivel vender o produto, tente novamente");
             }
+        } catch (SQLException ex) {
+            System.err.println("\nNão foi possível alterar os dados, Código de erro: " + ex.getMessage());
         }
     }
     
@@ -90,5 +105,38 @@ public class ProdutosDAO{
         return Result;
     }
     
+    public ArrayList<ProdutosDTO> listarProdutosVendidos(Connection conect){
+        ArrayList<ProdutosDTO> Result = new ArrayList();
+        
+        ps = null;
+        rs = null;
+        conn = conect;
+        try {
+            System.err.println("Definindo os comandos");
+            comand = "SELECT * FROM produtos WHERE status = 'Vendido'";
+            ps = conn.prepareStatement(comand);
+            rs = ps.executeQuery();
+            System.err.println("Recuperando e exibindo os dados...");
+
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String Nome = rs.getString("nome");
+                int Valor = rs.getInt("valor");
+                String Status = rs.getString("status");
+                
+                ProdutosDTO pd = new ProdutosDTO();
+                pd.setId(id);
+                pd.setNome(Nome);
+                pd.setStatus(Status);
+                pd.setValor(Valor);
+                
+                Result.add(pd);
+            }
+        } catch (SQLException ex) {
+            System.err.println("erro ao carregar dados do banco de dados, Codigo de erro: " + ex.getMessage());
+        }
+        
+        return Result;
+    }
 }
 
