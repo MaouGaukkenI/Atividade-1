@@ -25,7 +25,6 @@ If you wish to set tracking information for this branch you can do so with:
 
     git branch --set-upstream-to=origin/<branch> master
 
-
 TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3 (Melhorias)
 $ git branch -m melhorias
 
@@ -35,3 +34,38 @@ From https://github.com/MaouGaukkenI/Atividade-1
  * branch            melhorias  -> FETCH_HEAD
  * [new branch]      melhorias  -> origin/melhorias
 Updating files: 100% (44/44), done.
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3 (melhorias)
+$ git add .
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3 (melhorias)
+$ git status
+On branch melhorias
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    gitComandos2.txt -> gitComandos3.txt
+        deleted:    gitConsole2.txt
+        new file:   gitConsole3.txt
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3 (melhorias)
+$ git commit -m "Atividade 3 inicio"
+[melhorias 5a3457c] Atividade 3 inicio
+ 3 files changed, 37 insertions(+), 235 deletions(-)
+ rename gitComandos2.txt => gitComandos3.txt (100%)
+ delete mode 100644 gitConsole2.txt
+ create mode 100644 gitConsole3.txt
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3 (melhorias)
+$ git push -u origin melhorias
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 858 bytes | 858.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MaouGaukkenI/Atividade-1.git
+   f1ca121..5a3457c  melhorias -> melhorias
+branch 'melhorias' set up to track 'origin/melhorias'.
+
+
