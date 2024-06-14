@@ -68,4 +68,35 @@ To https://github.com/MaouGaukkenI/Atividade-1.git
    f1ca121..5a3457c  melhorias -> melhorias
 branch 'melhorias' set up to track 'origin/melhorias'.
 
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3/LeiloesTDSat (melhorias)
+$ git add .
+warning: in the working copy of 'build/classes/Viewn/cadastroVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'build/classes/Viewn/listagemVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/Viewn/cadastroVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/Viewn/listagemVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/Viewn/vendasVIEW.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/Viewn/vendasVIEW.java', LF will be replaced by CRLF the next time Git touches it
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3/LeiloesTDSat (melhorias)
+$ git commit -m "Tela de vendas com tabela funcionando"
+[melhorias f35022c] Tela de vendas com tabela funcionando
+ 13 files changed, 354 insertions(+), 10 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 src/Viewn/vendasVIEW.form
+ create mode 100644 src/Viewn/vendasVIEW.java
+
+TheDe@MaouGaukkensPC MINGW64 /d/Senac/Atividades para entrega/Mod III/Atividade 3/LeiloesTDSat (melhorias)
+$ git push -u origin melhorias
+Enumerating objects: 44, done.
+Counting objects: 100% (44/44), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (24/24), 7.34 KiB | 1.47 MiB/s, done.
+Total 24 (delta 17), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (17/17), completed with 16 local objects.
+To https://github.com/MaouGaukkenI/Atividade-1.git
+   5a3457c..f35022c  melhorias -> melhorias
+branch 'melhorias' set up to track 'origin/melhorias'.
+
+
 
